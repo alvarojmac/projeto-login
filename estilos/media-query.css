@@ -28,6 +28,12 @@
     
     section#login {
         width: 950px;
+
+        /* 
+        --> Utilizando display flex (sem precisar do float para reverter a ordem da imagem)
+         display: flex;
+        flex-direction: row-reverse; 
+        */
     }
 
     section#login > div#imagem {
