@@ -28,7 +28,7 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    
     overflow: hidden; /* Tudo que estiver fora da borda será escondido */
 
     background-color: white;
@@ -37,6 +37,7 @@ section#login {
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.426);
 
+    transform: translate(-50%, -50%);
     transition: width .3s, heigth .3s;
     transition-timing-function: ease; /* suaviza a animação */
 }
@@ -56,24 +57,49 @@ section#login > div#formulario {
 
 div#formulario > h1 {
     text-align: center;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 div#formulario > p {
     font-size: 0.8em;
+    padding-bottom: 5px;
 }
 
 form > div.campo {
     background-color: var(--lilasPersonalizado);
+    border: 2px solid var(--lilasPersonalizado);
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0;
 }
 
 div.campo > label {
     display: none;
+}
+
+div.campo > span {
+    color: white;
+    font-size: 1.6em; /* 2 */
+    width: 40px;
+    padding: 5px;
+    text-align: center;
+}
+
+div.campo > input {
+    background-color: rgb(234, 233, 233);
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-7px);
+}
+
+div.campo > input:focus-within { /* quando ganhar o foco */
+    background-color: white;
 }
 
 form > button {
@@ -84,31 +110,31 @@ form > button {
     background-color: var(--verdePersonalizado);
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
 }
 
 form > button:hover {
-    background-color: #2c6564;
+    background-color: #5dcac6;
 }
 
 form > a.botao {
     display: block;
     text-align: center;
-    font-size: 1em;
+    font-size: 0.8em;
     width: 100%;
     height: 40px;
     padding-top: 7px;
     margin-top: 5px;
     background-color: white;
-    color: #2c6564;
-    border: 1px solid var(--verdePersonalizado);
+    color: var(--lilasPersonalizado);
+    /* border: 1px solid var(--verdePersonalizado); */
     border-radius: 5px;
     text-decoration: none;
 }
 
 form > a.botao:hover {
-    background-color: #5dcac6;
+    color: #5dcac6;
 }
 
 form > a.botao > span {
