@@ -9,7 +9,7 @@
 
 > Desktop
 
-🔗 [Acesse o projeto aqui](https://alvarojmac.github.io/projetologin)
+🔗 [Acesse o projeto aqui](https://alvarojmac.github.io/projeto-login)
 
 ## 📡 Tecnologias
 
